@@ -25,7 +25,7 @@ nginx_config="${nginx_prefix}/conf.d/xray.conf"
 nginx_service="/etc/systemd/system/nginx.service"
 nginx_is_installed=""
 
-php_version="php-8.1.2"
+php_version="php-7.4.27"
 php_prefix="/usr/local/php"
 php_service="/etc/systemd/system/php-fpm.service"
 php_is_installed=""
@@ -406,7 +406,8 @@ enter_temp_dir()
         exit 1
     fi
 }
-#检查是否需要php
+#检查是否需要
+
 check_need_php()
 {
     [ $is_installed -eq 0 ] && return 1
