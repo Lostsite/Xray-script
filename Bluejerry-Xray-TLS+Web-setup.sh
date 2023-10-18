@@ -3143,9 +3143,6 @@ print_config_info()
     blue   "   如果客户端系统为Windows，并且正在使用透明代理或TUN/Bypass LAN，请确保当前网络设置为专用网络"
     echo
     tyblue " 脚本最后更新时间：2023.1.1"
-    echo
-    red    " 此脚本仅供交流学习使用，请勿使用此脚本行违法之事。网络非法外之地，行非法之事，必将接受法律制裁!!!!"
-    tyblue " 2020.11"
 }
 
 install_update_xray_tls_web()
