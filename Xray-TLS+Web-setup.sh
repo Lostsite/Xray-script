@@ -18,24 +18,24 @@ using_swap_now=0
 timezone=""
 
 #安装信息
-nginx_version="nginx-1.21.6"
-openssl_version="openssl-openssl-3.0.1"
+nginx_version="nginx-1.25.2"
+openssl_version="openssl-openssl-3.0.8" #use ssl LTS
 nginx_prefix="/usr/local/nginx"
 nginx_config="${nginx_prefix}/conf.d/xray.conf"
 nginx_service="/etc/systemd/system/nginx.service"
 nginx_is_installed=""
 
-php_version="php-7.4.27"
+php_version="php-8.2.5"
 php_prefix="/usr/local/php"
 php_service="/etc/systemd/system/php-fpm.service"
 php_is_installed=""
 
-cloudreve_version="3.4.2"
+cloudreve_version="3.8.2"
 cloudreve_prefix="/usr/local/cloudreve"
 cloudreve_service="/etc/systemd/system/cloudreve.service"
 cloudreve_is_installed=""
 
-nextcloud_url="https://download.nextcloud.com/server/daily/latest-master.zip"
+nextcloud_url="https://download.nextcloud.com/server/releases/latest-master.zip"
 
 xray_config="/usr/local/etc/xray/config.json"
 xray_is_installed=""
