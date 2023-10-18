@@ -107,11 +107,11 @@ dnf -y install wget ca-certificates || yum -y install wget ca-certificates
 ```
 ### 2. 获取/更新脚本
 ```bash
-wget -O Xray-TLS+Web-setup.sh https://github.com/Lostsite/Xray-script-Oldstable/raw/main/Bluejerry-Xray-TLS+Web-setup.sh
+wget -O Bluejerry-Xray-TLS+Web-setup.sh https://github.com/Lostsite/Xray-script-Oldstable/raw/main/Bluejerry-Xray-TLS+Web-setup.sh
 ```
 ### 3. 执行脚本
 ```bash
-bash Xray-TLS+Web-setup.sh
+bash Bluejerry-Xray-TLS+Web-setup.sh
 ```
 ### 4. 根据脚本提示完成安装
 ## 运行截图
