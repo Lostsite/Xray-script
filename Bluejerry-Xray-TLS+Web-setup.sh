@@ -523,7 +523,6 @@ swap_off()
 #启用/禁用php cloudreve
 turn_on_off_php()
 {
-    if check_need_php; then
         systemctl start php-fpm
         systemctl enable php-fpm
 }
