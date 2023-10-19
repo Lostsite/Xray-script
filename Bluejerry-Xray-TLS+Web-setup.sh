@@ -459,13 +459,7 @@ check_need_php()
 #检查是否需要cloudreve
 check_need_cloudreve()
 {
-    [ $is_installed -eq 0 ] && return 1
-    local i
-    for i in "${pretend_list[@]}"
-    do
-        [ "$i" == "1" ] && return 0
-    done
-    return 1
+    return 0
 }
 #检查Nginx更新
 check_nginx_update()
@@ -532,20 +526,12 @@ turn_on_off_php()
     if check_need_php; then
         systemctl start php-fpm
         systemctl enable php-fpm
-    else
-        systemctl stop php-fpm
-        systemctl disable php-fpm
-    fi
 }
 turn_on_off_cloudreve()
 {
-    if check_need_cloudreve; then
-        systemctl start cloudreve
-        systemctl enable cloudreve
-    else
+
         systemctl stop cloudreve
         systemctl disable cloudreve
-    fi
 }
 let_change_cloudreve_domain()
 {
@@ -1795,7 +1781,7 @@ readPretend()
     do
         echo -e "\\n\\n\\n"
         tyblue "------------------------------请选择伪装网站页面------------------------------"
-        green  " 1. Cloudreve (推荐)"
+        green  " 1. Cloudreve (Not available) (推荐)"
         purple "     个人网盘"
         green  " 2. Nextcloud (推荐)"
         purple "     个人网盘，需安装php"
