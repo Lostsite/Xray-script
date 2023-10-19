@@ -521,17 +521,11 @@ swap_off()
     fi
 }
 #启用/禁用php cloudreve
-turn_on_off_php()
-{
-        systemctl start php-fpm
-        systemctl enable php-fpm
-}
-turn_on_off_cloudreve()
-{
+systemctl start php-fpm
+systemctl enable php-fpm
+systemctl stop cloudreve
+systemctl disable cloudreve
 
-        systemctl stop cloudreve
-        systemctl disable cloudreve
-}
 let_change_cloudreve_domain()
 {
     tyblue "----------- 请打开\"https://${domain_list[$1]}\"修改Cloudreve站点信息 ---------"
